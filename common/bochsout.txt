@@ -34,12 +34,12 @@
 00000000000i[     ]   SB16 support: no
 00000000000i[     ]   USB support: no
 00000000000i[     ]   VGA extension support: vbe 
-00000000000i[MEM0 ] allocated memory at 0xf6013010. after alignment, vector=0xf6014000
+00000000000i[MEM0 ] allocated memory at 0xf6026010. after alignment, vector=0xf6027000
 00000000000i[MEM0 ] 16.00MB
 00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('./bochs/BIOS-bochs-latest')
 00000000000i[MEM0 ] rom at 0xc0000/39424 ('./bochs/vgabios.bin')
 00000000000i[CMOS ] Using local time for initial clock
-00000000000i[CMOS ] Setting initial clock to: Wed Jul 28 20:59:45 2021 (time0=1627477185)
+00000000000i[CMOS ] Setting initial clock to: Sun Aug  1 16:37:56 2021 (time0=1627807076)
 00000000000i[DMA  ] channel 4 used by cascade
 00000000000i[DMA  ] channel 2 used by Floppy Drive
 00000000000i[FDD  ] fd0: './linux-0.11/Image' ro=0, h=2,t=80,spt=18
@@ -93,11 +93,11 @@
 00000562191i[VGA  ] VBE known Display Interface b0c0
 00000562223i[VGA  ] VBE known Display Interface b0c4
 00000565148i[VBIOS] VBE Bios $Id: vbe.c,v 1.58 2006/08/19 09:39:43 vruppert Exp $
-00000888850i[BIOS ] ata0-0: PCHS=204/16/38 translation=none LCHS=204/16/38
+00000888612i[BIOS ] ata0-0: PCHS=204/16/38 translation=none LCHS=204/16/38
 00001200000i[XGUI ] charmap update. Font Height is 16
 00004769035i[BIOS ] IDE time out
 00004967898i[BIOS ] Booting from 0000:7c00
-00016198401i[FDD  ] partial read() on floppy image returns 161/512
+00016198401i[FDD  ] partial read() on floppy image returns 193/512
 00016243356i[FDD  ] read() on floppy image returns 0
 00016289556i[FDD  ] read() on floppy image returns 0
 00016334511i[FDD  ] read() on floppy image returns 0
@@ -237,26 +237,3 @@
 00022368451i[FDD  ] read() on floppy image returns 0
 00022413406i[FDD  ] read() on floppy image returns 0
 00022463876i[BIOS ] int13_harddisk: function 15, unmapped device for ELDL=81
-00825764000p[XGUI ] >>PANIC<< POWER button turned off.
-00825764000i[CPU  ] CPU is in protected mode (active)
-00825764000i[CPU  ] CS.d_b = 32 bit
-00825764000i[CPU  ] SS.d_b = 32 bit
-00825764000i[CPU  ] | EAX=0001b140  EBX=00000007  ECX=0001c258  EDX=00000017
-00825764000i[CPU  ] | ESP=0001c0fc  EBP=00021e6c  ESI=00000002  EDI=00000002
-00825764000i[CPU  ] | IOPL=0 id vip vif ac vm rf nt of df IF tf sf ZF af PF cf
-00825764000i[CPU  ] | SEG selector     base    limit G D
-00825764000i[CPU  ] | SEG sltr(index|ti|rpl)     base    limit G D
-00825764000i[CPU  ] |  CS:0008( 0001| 0|  0) 00000000 00000fff 1 1
-00825764000i[CPU  ] |  DS:0010( 0002| 0|  0) 00000000 00000fff 1 1
-00825764000i[CPU  ] |  SS:0010( 0002| 0|  0) 00000000 00000fff 1 1
-00825764000i[CPU  ] |  ES:0010( 0002| 0|  0) 00000000 00000fff 1 1
-00825764000i[CPU  ] |  FS:0017( 0002| 1|  3) 00000000 0000009f 1 1
-00825764000i[CPU  ] |  GS:0017( 0002| 1|  3) 00000000 0000009f 1 1
-00825764000i[CPU  ] | EIP=00006bcc (00006bcc)
-00825764000i[CPU  ] | CR0=0x8000001b CR1=0 CR2=0x08032ef0
-00825764000i[CPU  ] | CR3=0x00000000 CR4=0x00000000
-00825764000i[CPU  ] >> sub ecx, 0x00000004 : 83E904
-00825764000i[CMOS ] Last time is 1627477391 (Wed Jul 28 21:03:11 2021)
-00825764000i[XGUI ] Exit
-00825764000i[     ] restoring default signal behavior
-00825764000i[CTRL ] quit_sim called with exit code 1
